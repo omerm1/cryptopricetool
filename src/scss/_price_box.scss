@@ -1,0 +1,76 @@
+.prices_container {
+    br {
+        line-height: 150%;
+    };
+    display: flex;
+    border: 2px;
+   // flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: 17rem;
+    border-radius: 1rem;
+    text-align: center;
+    justify-content: center;
+
+    .price_box {
+        @include price_box;
+    }
+}
+
+.affect_all_div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+.refresh_all {
+    background-color: $dark-color;
+    color: whitesmoke;
+    padding: 0.5rem 0.6rem;
+    border-radius: 1rem;
+    margin: 0.5rem;
+    transition: transform 0.2s ease;
+        &:hover {
+            transform: scale(1.2);
+        }
+}
+
+
+.delete_all {
+    background-color: $dark-color;
+    color: whitesmoke;
+    padding: 0.5rem;
+    padding-left: 0.4rem;
+    border-radius: 1rem;
+    margin: 0.5rem;
+    transition: transform 0.2s ease;
+        &:hover {
+            transform: scale(1.2);
+        }
+}
+
+
+@keyframes spin {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}
+
+.price_box_loader {
+    color: white;
+    margin: auto;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    width: 5rem;
+    height: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .fa-spinner {
+        color: $dark-color;
+        animation: spin 1.5s linear infinite;
+        margin: auto;
+        text-align: center;
+    }
+    
+}

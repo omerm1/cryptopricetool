@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+    vertical-align: baseline;
+}
+
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("./../images/background1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.main {
+    margin: 0 auto;
+    background-color: rgba(202, 218, 238, 0.9);
+    width: 60%;
+    height: 100vh;
+    font-family: $font-h; 
+    position: relative;
+    box-shadow: 1px 2px 3px 1px black;
+}
+
+.heading {
+    text-align: center;
+    font-weight: bold;
+    h1 {
+        padding: 3rem;
+        margin-bottom: 0.4rem;
+        font-size: 3rem;
+        color: $dark-color;
+        align-content: center;
+    }
+}
+

@@ -1,0 +1,18 @@
+@mixin price_box {
+    background-color: $dark-color;
+    color: white;
+    margin: 0.5rem auto;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    width: 5rem;
+    height: 4rem;
+    .price_del {
+        padding-top: 0.3rem;
+        background-color: $dark-color;
+        color: whitesmoke;
+        transition: transform 0.2s ease;
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
+}

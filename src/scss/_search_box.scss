@@ -1,0 +1,31 @@
+.search_area {
+    text-align: center;
+    color: $dark-color;
+}
+
+.search_bar {
+    border: 1px;
+    background-color: $dark-color;
+    width: 14rem;
+    margin: 0.5rem auto;
+    padding: 0.3rem;
+    border-radius: 1rem;
+    .search {
+        padding-left: 0.5rem;
+        border-radius: 1rem;
+        width: 12rem;
+        background-color: $dark-color;
+        color: $text-color;
+        font-size: 1.2rem;
+    }
+
+    .submit {
+        background-color: $dark-color;
+        //margin-left: rem;
+        color: white;
+        transition: transform 0.2s ease;
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
+}
